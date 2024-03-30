@@ -13,7 +13,7 @@ export const Filter = () => {
 
   return (
     <div className={css.filterContainer}>
-      <p class={css.filterLabel}>Find Contacts by Name</p>
+      <p className={css.filterLabel}>Find Contacts by Name</p>
       <input
         className={css.filterInput}
         type="text"

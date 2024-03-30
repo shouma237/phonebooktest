@@ -27,7 +27,9 @@ export const ContactList = () => {
       {isLoading && !error && <Loader />}
 
       {!isLoading && !error && filteredContacts.length === 0 && (
-        <p>The Phonebook is empty. Please add a contact</p>
+        <p className={css.contactsText}>
+          The Phonebook is empty. Please add a contact.
+        </p>
       )}
 
       {!isLoading &&

@@ -3,3 +3,9 @@
   margin-bottom: 30px;
   padding: 20px;
 }
+
+.contactsText {
+  font-size: 20px;
+  color: rgb(236, 109, 109);
+  font-style: italic;
+}
