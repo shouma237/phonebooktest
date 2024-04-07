@@ -1,4 +1,4 @@
-import { ContactListItem } from 'components/ContactListItem/ContactListItem';
+import { ContactListItem } from '../ContactListItem/ContactListItem';
 import { Loader } from 'components/Loader/Loader';
 import { fetchContacts } from '../../redux/contacts/contactsOperation';
 import {
