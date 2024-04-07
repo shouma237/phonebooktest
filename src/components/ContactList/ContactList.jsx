@@ -1,14 +1,11 @@
-import { ContactListItem } from '../ContactListItem/ContactListItem';
-import { Loader } from 'components/Loader/Loader';
-import { fetchContacts } from '../../redux/contacts/contactsOperation';
-import {
-  selectFilteredContacts,
-  selectError,
-  selectIsLoading,
-} from '../../redux/contacts/contactsSelector';
 import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+// prettier-ignore
+import { selectFilteredContacts, selectError, selectIsLoading } from '../../redux/contacts/contactsSelector';
+import { fetchContacts } from '../../redux/contacts/contactsOperation';
+import { ContactListItem } from './ContactListItem/ContactListItem';
+import { Loader } from '../Loader/Loader';
 import css from './ContactList.module.css';
 
 export const ContactList = () => {
@@ -28,7 +25,7 @@ export const ContactList = () => {
 
       {!isLoading && !error && filteredContacts.length === 0 && (
         <p className={css.contactsText}>
-          The Phonebook is empty. Please add a contact.
+          The Phonebook is empty. Please add a contact
         </p>
       )}
 
